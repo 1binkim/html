@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVER.COM</title>
+</head>
+<body>
+    <header>
+        <div class="head-menu">
+            <img src="/images/menu.png" width="24px" alt="menu icon"> <!--바 태그-->
+            <!--pay 태그-->
+            <a href="#">pay</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-comment"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-tooth"></i>
+        </div>
+    </header>
+    
+   
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+        .head-menu{
+            display:flex;
+        }
+
+        .head-menu ul{
+            display:flex;
+            list-style-type: none;
+        }
+        .head-menu{
+            justify-content: space-between;
+        }
+        .head-menu ul li{
+            margin:20px;
+            font-size:30px;
+        }
+
+        .menu-bar{
+            display:flex;
+            align-items: center;
+            gap:10px;
+        }
+        a{
+            text-decoration: none;
+            border:3px solid black;
+            border-radius: 50%;
+            padding:5px;
+            display:inline-block;
+            width:25px;
+            height:25px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color: white;
+            color:black;
+            font-weight: bold;
+            transition: background-color 0.2s,transform 0.1s;
+        }
+        a:visited{
+            color:black;
+        }
+        a:active{
+            color:black;
+        }
+        .icon-with-label{
+            display:flex;
+            flex-direction: column;
+            font-size:14px;
+        }
+        .icon-with-label i{
+            font-size: 24px;
+            /* 아이콘 크기 */
+        }
+    </style>
+    
+    <div>검색</div>
+    <nav class="nav-list">
+        <!-- li 태그를 이용하여 다음 내용을 리스트로 만들어볼 것메일 카페 블로그 ........ -->
+        <ul>
+            <li class="icon-with-label">
+                <i class="fa-regular fa-envelope"></i><span>메일</span>
+            </li>
+            <li class="icon-with-label"><i class="fa-solid fa-envelope"></i><span>메일</span></li>
+            <li class="icon-with-label"><i class="fa-solid fa-blog"></i><span>블로그</span></li>
+            <li class="icon-with-label"><i class="fa-solid fa-store"></i><span>스토어</span></li>
+            <li class="icon-with-label"><i class="fa-solid fa-chart-line"></i><span>증권</span></li>
+            <li class="icon-with-label"><i class="fa-solid fa-newspaper"></i><span>뉴스</span></li>
+            <li class="icon-with-label"><i class="fa-solid fa-house"></i><span>부동산</span></li>
+            <li class="icon-with-label"><i class="fa-solid fa-map"></i><span>지도</span></li>
+        </ul>
+    </nav>
+    <style>
+        .search
+        .nav-list{
+            display:flex
+        }
+    </style>
+</body>
+</html>
